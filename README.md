@@ -11,16 +11,16 @@ The verifier is designed to prove properties of the form $\psi: x_{11} > x_{12}$
 ## Features
 The verifier includes specialized transformers implemented in PyTorch for various neural network layers and components:
 
-**Affine Transformers:** Handles both Fully Connected (Linear) and Convolutional layers.
-**Activation Functions:** Support for ReLU and ReLU6 transformers.
-**Architectural Components:** Implementation of Skip connections (residual blocks).
-**Optimization:** Includes strategies for slope optimization to improve verification precision.
+- **Affine Transformers:** Handles both Fully Connected (Linear) and Convolutional layers.
+- **Activation Functions:** Support for ReLU and ReLU6 transformers.
+- **Architectural Components:** Implementation of Skip connections (residual blocks).
+- **Optimization:** Includes strategies for slope optimization to improve verification precision.
 
 ## Evaluation Requirements
 The verifier is designed to operate within the following constraints:
-**Time Limit:** 60 seconds per test case.
-**Hardware:** 8 CPU cores.
-**Memory:** 20GB limit.
+- **Time Limit:** 60 seconds per test case.
+- **Hardware:** 8 CPU cores.
+- **Memory:** 20GB limit.
 
 ## Setup instructions
 

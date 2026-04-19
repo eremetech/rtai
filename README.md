@@ -1,6 +1,26 @@
 # RTAI 2024 Course Project
 
 Certifying NNs, joint work with [@h-buechi](https://github.com/h-buechi), [@hannohiss](https://github.com/hannohiss), [@eremetech](https://github.com/eremetech).
+The project achieved 112.5/115 points on test cases (The project is evaluated based on a set of 170 test cases involving MNIST and CIFAR-10 datasets. Verified: +1 point. Unsound (False Positive): -2.5 points. Unverified: 0 points).
+
+## Project Overview
+This repository contains the implementation of a neural network verifier based on the DeepPoly convex relaxation. The goal of this project is to provide a sound and precise tool for verifying the robustness of neural networks against adversarial perturbations.
+
+The verifier is designed to prove properties of the form $\psi: x_{11} > x_{12}$ for a given set of input values. By utilizing DeepPoly relaxations, this implementation achieves high approximation precision compared to standard interval-based certification (Box), which often fails due to its inability to capture relational information between neurons.
+
+## Features
+The verifier includes specialized transformers implemented in PyTorch for various neural network layers and components:
+
+**Affine Transformers:** Handles both Fully Connected (Linear) and Convolutional layers.
+**Activation Functions:** Support for ReLU and ReLU6 transformers.
+**Architectural Components:** Implementation of Skip connections (residual blocks).
+**Optimization:** Includes strategies for slope optimization to improve verification precision.
+
+## Evaluation Requirements
+The verifier is designed to operate within the following constraints:
+**Time Limit:** 60 seconds per test case.
+**Hardware:** 8 CPU cores.
+**Memory:** 20GB limit.
 
 ## Setup instructions
 

@@ -1,6 +1,6 @@
 # RTAI 2024 Course Project
 
-Certifying NNs, joint work with [@h-buechi](https://github.com/h-buechi), [@mashaprostotak](https://github.com/mashaprostotak).
+Certifying NNs, joint work with [@h-buechi](https://github.com/h-buechi), [@eremetech](https://github.com/eremetech).
 
 ## Setup instructions
 
